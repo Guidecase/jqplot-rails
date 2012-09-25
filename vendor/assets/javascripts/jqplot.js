@@ -1,7 +1,7 @@
 //= require jquery.jqplot
 
 (function($) {
-  $( document ).on( "pagecreate create", function( e ){
+  $( document ).on( "pageshow", function( e ){
 	$( document ).trigger( "jqplotbeforecreate" );
 
     // Automatically bind to data-role='jqplot' items.
