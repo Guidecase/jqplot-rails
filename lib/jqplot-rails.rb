@@ -1,4 +1,5 @@
 require 'rails'
+require 'jqplot-rails/action_view/helpers/jqplot_helper'
 require 'jqplot-rails/railtie' 
 
 module Guidecase
