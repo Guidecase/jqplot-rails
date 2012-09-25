@@ -11,6 +11,8 @@
         var dataSeries = container.data('series')
         var options = container.data('options')
 	    var chart = $.jqplot(container, dataSeries, options);
+	    
+	    container.data('jqplot', true) // flag to prevent possible duplicate initialization
 	  }
 	});
   });
