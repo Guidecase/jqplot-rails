@@ -45,7 +45,7 @@ A jqPlot element is simply a div with a number of data options that are read whe
              :axesDefaults => {:tickOptions => {:showGridline => false}},
              :grid => {:shadow => false, :drawGridLines => false} ) %>    
 
-The `jqplot` helper method simply creates a <div> tag populated with the provided data attribute options plus some sane defaults.
+The `jqplot` helper method simply creates a DIV tag populated with the provided data attribute options plus some sane defaults.
 
 Note: this gem is meant to be used with JQuery Mobile and binds document triggers against JQM-specific events (namely 'pageshow').
 
