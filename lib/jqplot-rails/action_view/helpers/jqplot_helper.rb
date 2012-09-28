@@ -6,7 +6,7 @@ module ActionView
       def jqplot(height, width, data_series, options={})
       	dom_id = SecureRandom.hex(12)
         tag "div", :data => {:series => data_series, :options => options, :role => 'jqplot'}, 
-        	       :id => dom_id
+        	         :id => dom_id, :style => "height:#{height}px;width:#{width}px"
       end
   	end
   end
