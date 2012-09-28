@@ -36,7 +36,7 @@ You must also add the following to your stylesheet manifest:
 
 A jqPlot element is simply a div with a number of data options that are read when initializing the control from the script. Initialize a graph with the height, width, array of one or more datasets, and a hash of jqPlot options.
 
-  <%= jqplot 200, 300, [first_dataset, second_dataset], 
+    <%= jqplot 200, 300, [first_dataset, second_dataset], 
              :axes => {
                :xaxis => {:min => 0, :max => 11, :ticks => [[0,'J'],[1,'F'],[2,'M'],[3,'A'],[4,'M'],[5,'J'],[6,'J'],[7,'A'],[8,'S'],[9,'O'],[10,'N'],[11,'D']]}, 
                :yaxis => {:min => 0, :ticks => [[0,'0'],[10,'10'],[20,'20']]} 
@@ -45,8 +45,9 @@ A jqPlot element is simply a div with a number of data options that are read whe
              :axesDefaults => {:tickOptions => {:showGridline => false}},
              :grid => {:shadow => false, :drawGridLines => false} ) %>    
 
+The `jqplot` helper method simply creates a <div> tag populated with the provided data attribute options plus some sane defaults.
 
-Note: this gem is meant to be used with JQuery Mobile and binds document triggers against JQM-specific events.
+Note: this gem is meant to be used with JQuery Mobile and binds document triggers against JQM-specific events (namely 'pageshow').
 
 
 ### License

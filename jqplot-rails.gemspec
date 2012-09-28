@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name         = "jqplot-rails"
-  s.version      = '0.9.2'
+  s.version      = '1.0.0'
   s.platform     = Gem::Platform::RUBY  
   s.description  = "JQPlot"
   s.summary      = "This gem provides the JQPlot plugin assets to Rails apps."
